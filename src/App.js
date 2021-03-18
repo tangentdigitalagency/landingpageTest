@@ -56,18 +56,18 @@ function App() {
                         </Row>
                        <div className="section-two-img-container">
                              <Row>
-                                <Col xs={{span: 24, offset: 0}} lg={{span: 12, offset: 0}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 12}} className="section-two-imgs">
                                   <img src={travelers} alt="logo1"/>
                                 </Col>
-                                <Col xs={{span: 24, offset: 0}} lg={{span: 9, offset: 3}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 9, offset: 3}} className="section-two-imgs">
                                    <img src={progressive} alt="logo1" className="ml-1"/>
                                 </Col>
                              </Row>
                              <Row>
-                                <Col xs={{span: 24, offset: 0}} lg={{span: 12, offset: 0}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 12}} className="section-two-imgs">
                                   <img src={stateAuto} alt="logo1"/>
                                 </Col>
-                                <Col xs={{span: 24, offset: 0}} lg={{span: 10, offset: 2}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 10, offset: 2}} className="section-two-imgs">
                                    <img src={farmers} alt="logo1"/>
                                 </Col>
                              </Row>
@@ -123,6 +123,29 @@ function App() {
                                         </Button>
                       </Col>
                   </Row>
+              </section>
+              <section className="trusted-companies pt-4">
+                  <div className="container">
+                       <Row className="py-5">
+                          <Col span={24}>
+                          <h3 className="mx-auto text-center text-white">Trusted by some of leading <br/>companies in the world</h3>
+                          </Col>
+                      </Row>
+                        <Row>
+                                <Col xs={{span: 24}} lg={{span: 6 }} className="section-two-imgs ">
+                                  <img src={travelers} alt="logo1"  className="bg-white custom-rounded py-1"/>
+                                </Col>
+                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs " >
+                                   <img src={progressive} alt="logo1" className="ml-1 bg-white custom-rounded py-2 px-2"/>
+                                </Col>
+                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs mt-md-3">
+                                  <img src={stateAuto} alt="logo1" className="bg-white custom-rounded py-2 px-1"/>
+                                </Col>
+                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs  mt-md-3">
+                                   <img src={farmers} alt="logo1"  className="bg-white custom-rounded py-2 px-1"/>
+                                </Col>
+                         </Row>
+                  </div>
               </section>
               </Content>
           <Footer className="footer">
