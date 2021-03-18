@@ -1,5 +1,5 @@
 import './App.css';
-import {Button, Col, Layout, Row} from "antd";
+import {Button, Col, Collapse, Layout, Row} from "antd";
 import logo from './assets/img/logo.png';
 import farmers from './assets/img/farmers.png';
 import progressive from './assets/img/progressive.png';
@@ -9,11 +9,11 @@ import heroImg from './assets/img/hero-img.jpg';
 import connectImg from './assets/img/connection.png';
 import whatImg from './assets/img/whatPeople.jpg';
 import quote from './assets/img/quote.png';
-import {ArrowRightOutlined, CheckOutlined} from '@ant-design/icons';
+import {ArrowRightOutlined, CheckOutlined, PlusOutlined} from '@ant-design/icons';
 
 function App() {
     const {Header, Footer, Content} = Layout;
-
+    const { Panel } = Collapse;
     return (
         <div>
         <Layout>
@@ -126,6 +126,48 @@ function App() {
                                         </Button>
                       </Col>
                   </Row>
+              </section>
+              <section className="container mt-md-5">
+                  <Row>
+                      <Col span={24} className="text-center">
+                          <h1>How to choose a company</h1>
+                      </Col>
+                  </Row>
+                  <Row className="mb-5 mt-3">
+                      <Col xs={{span: 24}} lg={{span: 16,offset:4}} className="text-center">
+                           <Collapse  expandIcon={({ isActive }) => <PlusOutlined  rotate={isActive ? 90 : 0} />}
+                                      expandIconPosition='right'>
+                                <Panel header="Figure Out Your Needs" key="1">
+                                    <div className="container text-left">
+                                  <p >Most people don’t enjoy having someone try to sell them something—that’s just human nature. But what’s even more frustrating is having someone try to sell you something when you kind of think you might need it, but you’re not sure.</p>
+                                  <p>Here are some other questions to think through and answer before you seek out insurance companies:</p>
+                                  <p ><strong>Do you prefer to have lower monthly payments or lower deductibles?</strong></p>
+                                  <p ><strong>Do you want to speak with the same agent each time you talk to your insurance company, or are you okay being assigned a new person with each new claim?</strong></p>
+                                  <p ><strong>What types of auto insurance do you need?</strong></p>
+                                  <p ><strong>Those types include liability, collision, comprehensive, personal injury, uninsured motorist, and more. How much can you afford to pay for car insurance?</strong></p>
+                                </div>
+                                </Panel>
+                                <Panel header="See What Companies Can Offer" key="2">
+                                  <div className="container text-left">
+                                  <p>Once you have a good idea of what you need—and what you don’t need—from your car insurance policy, it’s time to see what insurance companies are willing to offer. Because make no mistake: rates and policies do differ from company to company, and sometimes even agent to agent.</p><br/>
+                                  <p>Some of the policy decisions will be outside of your control. For example, each state has minimum coverage thresholds, which means you won’t be able to cut some types of insurance altogether, and there may be a certain amount of coverage you have to purchase in order to be legally insured in your state. Within those boundaries, however, there can be a lot of room for flexibility.</p>
+                                  </div>
+                                </Panel>
+                                <Panel header="Shop Around" key="3">
+                                  <div className="container text-left">
+                                  <p>Receiving a quote from an agent, company, or website can feel like a long process. But don’t let that push you into settling for the first quote you receive. Instead, you’re likely to find a much better deal if you’re willing to shop around. Here’s the great news: Quotehound can help you save time and effort in two ways when it comes to comparing car-insurance companies and quotes.</p><br/>
+                                  <p>First, offers a quick and simple way to review and compare auto-insurance d</p>
+                                  <p>‍Second, by entering your Zip code here, will do the hard work for you by matching you with qualified agents in your state who can contact you with their best policy rates based on the coverage you need. All you have to do is sit back and choose the deal that fits you best.</p>
+                                  </div>
+                                </Panel>
+                          </Collapse>
+                      </Col>
+                  </Row>
+                   <Row className="mt-1 text-center">
+                     <Col span={24}><Button type="block " size="large" className="btn-large text-white bg-blue">
+                      Start Your Free Qoute <ArrowRightOutlined/>
+                    </Button></Col>
+                    </Row>
               </section>
               <section className="container mt-md-5">
                   <Row>

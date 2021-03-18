@@ -237,13 +237,16 @@ li {
     background-image: url("https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/5e2b3fe9d3ee94239951871f_icon-checkmark.svg");
     background-repeat: no-repeat;
 }
-.trusted-companies{
+
+.trusted-companies {
     background-color: #6165ff;
 }
-.custom-rounded{
+
+.custom-rounded {
     border-radius: 25px;
 }
-.section-connect{
+
+.section-connect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,18 +255,21 @@ li {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .text-co2 {
     color: #767ead;
     font-size: 1rem;
     line-height: 25px;
     font-weight: 700;
 }
-.quote{
+
+.quote {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
     opacity: .3;
 }
+
 .quote-text-v1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -272,8 +278,18 @@ li {
     font-weight: 400;
     color: #a2a9b4;
 }
+
 .italic-text-4 {
-    font-family: Ubuntu,Helvetica,sans-serif;
+    font-family: Ubuntu, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
+}
+
+.ant-collapse {
+    border: none !important;
+    background-color: #ffffff;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    line-height: 2.5715 !important;
+    font-size: 1.1rem;
 }
