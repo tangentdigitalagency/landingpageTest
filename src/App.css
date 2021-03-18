@@ -1,9 +1,16 @@
 @import '~antd/dist/antd.css';
-.ant-layout-header{
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.ant-layout-header {
     background: #ffffff !important;
 }
 
-.section-one{
+.ant-layout {
+    background: #ffffff !important;
+
+}
+
+.section-one {
     width: 100%;
     height: 400px;
     position: relative;
@@ -26,7 +33,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.container-1{
+
+.container-1 {
     display: flex;
     max-width: 1140px;
     margin-right: auto;
@@ -37,7 +45,8 @@
     -webkit-flex: 1;
     flex: 1;
 }
-.block-left-hero{
+
+.block-left-hero {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -48,6 +57,7 @@
     -webkit-box-align: start;
     align-items: flex-start;
 }
+
 .hero_heading {
     margin-top: 0;
     margin-bottom: 10px;
@@ -58,18 +68,22 @@
     font-weight: 500;
     letter-spacing: -1px;
 }
-.text-white{
+
+.text-white {
     color: #ffffff;
 }
-.para-white{
+
+.para-white {
     max-width: 510px;
     margin-bottom: 25px;
     font-size: 18px;
     line-height: 28px;
 }
-.text-blue{
+
+.text-blue {
     color: #6165FF;
 }
+
 .block-right-hero {
     display: flex;
     -webkit-box-pack: center;
@@ -77,6 +91,7 @@
     -webkit-box-align: center;
     align-items: center;
 }
+
 .image-109 {
     max-width: 100%;
     vertical-align: middle;
@@ -84,17 +99,20 @@
     object-fit: contain;
     border-radius: 10px;
 }
-.btn-large{
-    width: 44%;
+
+.btn-large {
+    width: 15rem;
     border-radius: 0.4rem;
     height: 3rem;
     font-weight: 600;
 }
+
 .footer {
     min-height: auto;
     padding: 55px 5%;
     background-color: #6165ff;
 }
+
 .footer-container {
     display: block;
     max-width: 1200px;
@@ -103,6 +121,7 @@
     -webkit-box-flex: 1;
     flex: 1;
 }
+
 .footer-top-wrap-2 {
     display: flex;
     padding-bottom: 35px;
@@ -110,8 +129,9 @@
     justify-content: space-between;
     -webkit-box-align: start;
     align-items: flex-start;
-    border-bottom: 1px solid hsla(0,0%,100%,.25);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .25);
 }
+
 .heading-16 {
     display: block;
     max-width: 480px;
@@ -122,6 +142,98 @@
     line-height: 38px;
     text-align: left;
 }
+
 .div-block-58 {
     padding-top: 35px;
+}
+
+.section-two {
+    padding: 25px 5%;
+}
+
+.section-two-container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cl01_title {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #8a94a6;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.section-two-img-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.section-two-imgs {
+    padding: 2rem 1rem;
+}
+
+.ml-1 {
+    margin-top: 1rem;
+}
+
+.service-main-image.business {
+    background-image: url("https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/602d79d329b66638f1763d05_VARIOS-07.jpg");
+    background-size: contain;
+}
+
+.service-main-image {
+    min-height: 25rem;
+    margin-right: 0;
+    margin-left: 15px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-blue {
+    background-color: #5b56e0 !important;
+}
+
+.list-item-2 {
+    display: flex;
+    align-items: center;
+    /*background-image: url();*/
+    background-position: 0 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-weight: 400;
+}
+
+.h6-heading.list {
+    display: flex;
+    padding-right: 10px;
+    padding-left: 0;
+    align-items: center;
+    background-color: #fff;
+    color: #898ab1;
+    text-align: left;
+}
+
+
+ul {
+    margin-left: 40px;
+    list-style: none;
+}
+
+li {
+    padding: .3em 0 1em 40px;
+    background-image: url("https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/5e2b3fe9d3ee94239951871f_icon-checkmark.svg");
+    background-repeat: no-repeat;
 }
