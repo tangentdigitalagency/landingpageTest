@@ -1,5 +1,5 @@
 import './App.css';
-import {Button, Col, Collapse, Layout, Row} from "antd";
+import {Button, Card, Col, Collapse, Layout, Row} from "antd";
 import logo from './assets/img/logo.png';
 import farmers from './assets/img/farmers.png';
 import progressive from './assets/img/progressive.png';
@@ -10,7 +10,12 @@ import connectImg from './assets/img/connection.png';
 import whatImg from './assets/img/whatPeople.jpg';
 import quote from './assets/img/quote.png';
 import canvas from './assets/img/canvas.png';
+import minutes from './assets/img/2minutes.png';
+import best from './assets/img/best.png';
+import budget from './assets/img/budget.png';
+import {ReactComponent as YourSvg} from './assets/img/svg_2.svg';
 import {ArrowRightOutlined, CheckOutlined, PlusOutlined} from '@ant-design/icons';
+import Meta from "antd/es/card/Meta";
 
 function App() {
     const {Header, Footer, Content} = Layout;
@@ -40,7 +45,7 @@ function App() {
                                           Free Commercial Quote <ArrowRightOutlined/>
                                         </Button>
                              </Col>
-                             <Col xs={{span: 24}} lg={{span: 12}}>
+                             <Col xs={{span: 24}} lg={{span: 11,offset:1}}>
                                  <div className="block-right-hero">
                                  <img src={heroImg} alt="heroImage" className="image-109" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 1279px) 45vw, 570px"/>
                                 </div>
@@ -60,18 +65,18 @@ function App() {
                         </Row>
                        <div className="section-two-img-container">
                              <Row>
-                                <Col xs={{span: 24}} lg={{span: 12}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 12}} className="px-md-4 py-3 ">
                                   <img src={travelers} alt="logo1"/>
                                 </Col>
-                                <Col xs={{span: 24}} lg={{span: 9, offset: 3}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 9, offset: 3}} className="px-md-4 py-3 ">
                                    <img src={progressive} alt="logo1" className="ml-1"/>
                                 </Col>
                              </Row>
                              <Row>
-                                <Col xs={{span: 24}} lg={{span: 12}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 12}} className="px-md-4 py-3 ">
                                   <img src={stateAuto} alt="logo1"/>
                                 </Col>
-                                <Col xs={{span: 24}} lg={{span: 10, offset: 2}} className="section-two-imgs">
+                                <Col xs={{span: 24}} lg={{span: 10, offset: 2}} className="px-md-4 py-3 ">
                                    <img src={farmers} alt="logo1"/>
                                 </Col>
                              </Row>
@@ -127,6 +132,66 @@ function App() {
                                         </Button>
                       </Col>
                   </Row>
+              </section>
+              <section className="container my-5">
+                  <Row>
+                      <Col xs={{span: 24}} lg={{span: 8}}>
+                          <div className="container d-flex h-100">
+                                 <div className="justify-content-center align-self-center">
+                          <h1>Why Us?</h1>
+                          <p>Receiving a quote from an agent, company, or website can feel like a long process. But don’t let that push you into settling for the first quote you receive. Instead, you’re likely to find a much better deal if you’re willing to shop around. This is where Quantum comes in.</p>
+                           <Row className="mt-1 ">
+                         <Col span={24}><Button type="block " size="large" className="btn-large text-white bg-blue">
+                          Start Your Free Qoute <ArrowRightOutlined/>
+                        </Button>
+                         </Col>
+                        </Row>
+                                 </div>
+                          </div>
+                      </Col>
+                      <Col xs={{span: 24}} lg={{span: 16}}>
+                          <Row>
+                              <Col xs={{span: 24}} lg={{span: 11,offset:1}} >
+                                 <Card
+                                     hoverable
+                                     className="w-75 shadow-sm"
+                                     cover={<img alt="example" src={budget} />}
+                                 >
+                                    <Meta title="Budget Family" description="By comparing several companies at once it will allow you to choose what’s best for your budget" />
+                                  </Card>
+                              </Col>
+                              <Col xs={{span: 24}} lg={{span: 12}}>
+                             <Card
+                                  hoverable
+                                  className="w-75 shadow-sm"
+                                  cover={<img alt="example" src={minutes} />}
+                              >
+                                    <Meta title="2 Minutes" description="Some companies take 15 minutes. It only takes 2 minutes to enter your information and receive quotes." />
+                                  </Card>
+                              </Col>
+                          </Row>
+                          <Row className="mt-3">
+                              <Col xs={{span: 24}} lg={{span: 11,offset:1}}>
+                                 <Card
+                                     hoverable
+                                     className="w-75 shadow-sm"
+                                     cover={<img alt="example" src={best} />}
+                                 >
+                                    <Meta title="We Want The Best" description="We care about you finding the best insurance option for you and your needs which is why we always connect you to the best option." />
+                                  </Card>
+                              </Col>
+                              <Col xs={{span: 24}} lg={{span: 12}}>
+                             <Card
+                                  hoverable
+                                  className="w-75 shadow-sm"
+                                  cover={<YourSvg />}
+                              >
+                                    <Meta title="You have options" description="Getting a quote across multiple insurance companies empowers you to know what works best for you." />
+                                  </Card>
+                              </Col>
+                          </Row>
+                      </Col>
+                      </Row>
               </section>
               <section className="container my-5">
                   <Row>
