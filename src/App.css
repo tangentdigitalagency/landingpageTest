@@ -62,7 +62,7 @@
     margin-top: 0;
     margin-bottom: 10px;
     color: #fff;
-    font-size: 45px;
+    font-size: 2rem;
     line-height: 1.1;
     margin: 10px 0 20px;
     font-weight: 500;
@@ -76,7 +76,7 @@
 .para-white {
     max-width: 510px;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 28px;
 }
 
@@ -242,4 +242,19 @@ li {
 }
 .custom-rounded{
     border-radius: 25px;
+}
+.section-connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/img/bottom_base_wave.svg');
+    background-position: 50% 101%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.text-co2 {
+    color: #767ead;
+    font-size: 1rem;
+    line-height: 25px;
+    font-weight: 700;
 }
