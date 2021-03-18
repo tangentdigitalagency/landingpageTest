@@ -18,7 +18,7 @@ function App() {
           <Header>
              <Row>
                   <Col xs={{span: 24}} lg={{span: 12}}>
-                      <a href="#"><img src={logo} width="181" alt="logo"/></a>
+                      <a href="https://www.quantumassurance.com/quotes/business/business-insurance"><img src={logo} width="181" alt="logo"/></a>
                   </Col>
                   <Col xs={{span: 24}} lg={{span: 12}} className="text-right"><strong>Call For Free Quote</strong></Col>
              </Row>
@@ -125,7 +125,7 @@ function App() {
                       </Col>
                   </Row>
               </section>
-              <section className="section-connect mt-5">
+              <section className="section-connect mt-5 pb-5">
                        <Row >
                           <Col xs={{span: 24}} lg={{span: 9, offset:3 }} >
                          <img src={connectImg} sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 43vw, (max-width: 1279px) 40vw, 515px" srcSet="https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720-p-500.png 500w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720.png 788w" alt=""/>
@@ -147,6 +147,11 @@ function App() {
                                          <Col xs={{span: 24}}>
                                              <CheckOutlined style={{ color: '#008000' }}/> <p className="d-inline ml-3 text-co2">We work with top rated companies!</p>
                                          </Col>
+                                     </Row>
+                                     <Row className="mt-4">
+                                         <Col span={24}><Button type="block " size="large" className="btn-large text-white bg-blue">
+                                          Start Your Free Qoute <ArrowRightOutlined/>
+                                        </Button></Col>
                                      </Row>
                                  </div>
                              </div>
