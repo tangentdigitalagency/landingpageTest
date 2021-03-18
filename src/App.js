@@ -7,6 +7,8 @@ import travelers from './assets/img/travelers.png';
 import stateAuto from './assets/img/state-auto.png';
 import heroImg from './assets/img/hero-img.jpg';
 import connectImg from './assets/img/connection.png';
+import whatImg from './assets/img/whatPeople.jpg';
+import quote from './assets/img/quote.png';
 import {ArrowRightOutlined, CheckOutlined} from '@ant-design/icons';
 
 function App() {
@@ -30,14 +32,14 @@ function App() {
                       <div className="container-1">
                          <div className="block-left-hero">
                             <Row>
-                             <Col xs={{span: 24}} lg={{span: 12 }}>
+                             <Col xs={{span: 24}} lg={{span: 12}}>
                                  <h1 className="hero_heading">Better Coverage with Quantum. Get a free Commercial Insurance Quote</h1>
                                  <p className="text-white para-white">A business owners policy includes protection for all major property and liability risk in one package. Offers protection to business owners against property damage, peril, business interruption, and liability. Get a free quote with Quantum today and see if your business qualifies for Business Owners Policy. </p>
                                 <Button type="block " size="large" className="btn-large text-blue">
                                           Free Commercial Quote <ArrowRightOutlined/>
                                         </Button>
                              </Col>
-                             <Col xs={{span: 24}} lg={{span: 12 }}>
+                             <Col xs={{span: 24}} lg={{span: 12}}>
                                  <div className="block-right-hero">
                                  <img src={heroImg} alt="heroImage" className="image-109" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 1279px) 45vw, 570px"/>
                                 </div>
@@ -125,27 +127,49 @@ function App() {
                       </Col>
                   </Row>
               </section>
+              <section className="container mt-md-5">
+                  <Row>
+                      <Col span={24} className="text-center">
+                          <h1>What people say about us</h1>
+                      </Col>
+                  </Row>
+                  <Row className="mt-md-5">
+                      <Col xs={{span: 24}} lg={{span: 12}}>
+                        <img src={whatImg} width="723" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 91vw, 723px" srcSet="https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0836a4f1bff_Comprehensive-insurance%2520(1)-p-500.jpeg 500w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0836a4f1bff_Comprehensive-insurance%2520(1)-p-1080.jpeg 1080w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0836a4f1bff_Comprehensive-insurance%2520(1)-p-1600.jpeg 1600w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0836a4f1bff_Comprehensive-insurance%20(1).jpg 2000w" alt="" className="client-image-big w-100 rounded"/>
+                      </Col>
+                      <Col xs={{span: 24}} lg={{span: 11, offset:1}}>
+                          <img src={quote} alt="quote" width="21" className="quote"/>
+                          <p className="quote-text-v1"><em className="font-italic italic-text-4">“I have never had such a great experience getting insurance quotes than I had using Quantum. &nbsp;Their form is super quick and simple. &nbsp;As soon as I hit submit, they matched me with a great insurance agent named Sandy. &nbsp;I had all the information and quotes I had to make the decision to switch my insurance. &nbsp;Thank you Quantum for the great connection! ”<br/></em></p>
+                        <p>Matthew</p>
+                          <Row className="mt-1">
+                             <Col span={24}><Button type="block " size="large" className="btn-large text-white bg-blue">
+                              Start Your Free Qoute <ArrowRightOutlined/>
+                            </Button></Col>
+                            </Row>
+                      </Col>
+                  </Row>
+              </section>
               <section className="section-connect mt-5 pb-5">
-                       <Row >
-                          <Col xs={{span: 24}} lg={{span: 9, offset:3 }} >
+                       <Row>
+                          <Col xs={{span: 24}} lg={{span: 9, offset: 3}}>
                          <img src={connectImg} sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 43vw, (max-width: 1279px) 40vw, 515px" srcSet="https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720-p-500.png 500w, https://assets.website-files.com/5e2b3fe9d3ee94499c5186d1/60256fd12e4fb0d8c14f1c09_developer-4027337_960_720.png 788w" alt=""/>
                           </Col>
-                          <Col xs={{span: 24}} lg={{span: 12 }} >
+                          <Col xs={{span: 24}} lg={{span: 12}}>
                              <div className="container d-flex h-75">
                                  <div className="justify-content-center align-self-center">
                                      <h2 className="mx-auto text-center ">We connect you with live rates in less than 2 minutes</h2>
                                      <Row className="mt-md-5">
                                          <Col xs={{span: 24}}>
-                                             <CheckOutlined style={{ color: '#008000' }} /> <p className="d-inline ml-3 text-co2">Quick and reliable</p>
+                                             <CheckOutlined style={{color: '#008000'}}/> <p className="d-inline ml-3 text-co2">Quick and reliable</p>
                                          </Col>
                                          <Col xs={{span: 24}}>
-                                             <CheckOutlined  style={{ color: '#008000' }}/> <p className="d-inline ml-3 text-co2">Quantum gives you tips!</p>
+                                             <CheckOutlined style={{color: '#008000'}}/> <p className="d-inline ml-3 text-co2">Quantum gives you tips!</p>
                                          </Col>
                                          <Col xs={{span: 24}}>
-                                             <CheckOutlined  style={{ color: '#008000' }}/> <p className="d-inline ml-3 text-co2">Secure and safe</p>
+                                             <CheckOutlined style={{color: '#008000'}}/> <p className="d-inline ml-3 text-co2">Secure and safe</p>
                                          </Col>
                                          <Col xs={{span: 24}}>
-                                             <CheckOutlined style={{ color: '#008000' }}/> <p className="d-inline ml-3 text-co2">We work with top rated companies!</p>
+                                             <CheckOutlined style={{color: '#008000'}}/> <p className="d-inline ml-3 text-co2">We work with top rated companies!</p>
                                          </Col>
                                      </Row>
                                      <Row className="mt-4">
@@ -166,17 +190,17 @@ function App() {
                           </Col>
                       </Row>
                         <Row>
-                                <Col xs={{span: 24}} lg={{span: 6 }} className="section-two-imgs ">
-                                  <img src={travelers} alt="logo1"  className="bg-white custom-rounded py-1"/>
+                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs ">
+                                  <img src={travelers} alt="logo1" className="bg-white custom-rounded py-1"/>
                                 </Col>
-                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs " >
+                                <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs ">
                                    <img src={progressive} alt="logo1" className="ml-1 bg-white custom-rounded py-2 px-2"/>
                                 </Col>
                                 <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs mt-md-3">
                                   <img src={stateAuto} alt="logo1" className="bg-white custom-rounded py-2 px-1"/>
                                 </Col>
                                 <Col xs={{span: 24}} lg={{span: 6}} className="section-two-imgs  mt-md-3">
-                                   <img src={farmers} alt="logo1"  className="bg-white custom-rounded py-2 px-1"/>
+                                   <img src={farmers} alt="logo1" className="bg-white custom-rounded py-2 px-1"/>
                                 </Col>
                          </Row>
                   </div>

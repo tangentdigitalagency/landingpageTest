@@ -258,3 +258,22 @@ li {
     line-height: 25px;
     font-weight: 700;
 }
+.quote{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: .3;
+}
+.quote-text-v1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #a2a9b4;
+}
+.italic-text-4 {
+    font-family: Ubuntu,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
