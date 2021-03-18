@@ -9,6 +9,7 @@ import heroImg from './assets/img/hero-img.jpg';
 import connectImg from './assets/img/connection.png';
 import whatImg from './assets/img/whatPeople.jpg';
 import quote from './assets/img/quote.png';
+import canvas from './assets/img/canvas.png';
 import {ArrowRightOutlined, CheckOutlined, PlusOutlined} from '@ant-design/icons';
 
 function App() {
@@ -124,6 +125,24 @@ function App() {
                           <Button type="block " size="large" className="btn-large text-white bg-blue">
                                           Start Your Free Qoute <ArrowRightOutlined/>
                                         </Button>
+                      </Col>
+                  </Row>
+              </section>
+              <section className="container my-5">
+                  <Row>
+                      <Col xs={{span: 24}} lg={{span: 12}}>
+                          <h1>What you need to know when choosing an insurer</h1>
+                          <p>Nobody enjoys dealing with things they don’t understand—especially when they have to pay for it</p>
+                          <p>For example, can you imagine putting yourself into debt just for the privilege of learning a bunch of facts and figures that you’ll probably never use again?</p>
+                          <p>Thankfully, Quantum has you covered when it comes to understanding car insurance.</p>
+                           <Row className="mt-1 ">
+                     <Col span={24}><Button type="block " size="large" className="btn-large text-white bg-blue">
+                      Start Your Free Qoute <ArrowRightOutlined/>
+                    </Button></Col>
+                    </Row>
+                      </Col>
+                      <Col xs={{span: 24}} lg={{span: 12}}>
+                          <img src={canvas} alt=""/>
                       </Col>
                   </Row>
               </section>
