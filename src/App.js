@@ -11,10 +11,10 @@ function App() {
         <Layout>
           <Header>
              <Row>
-                  <Col span={8}>
+                  <Col  xs={{ span: 12 }} lg={{ span: 12 }}>
                       <a href="#"><img src={logo} width="181" alt='logo'/></a>
                   </Col>
-                  <Col span={4} offset={12}><strong>Call For Free Quote</strong></Col>
+                  <Col xs={{ span: 12 }} lg={{ span: 12 }}><strong>Call For Free Quote</strong></Col>
              </Row>
           </Header>
           <Content>
@@ -43,7 +43,14 @@ function App() {
                 </Row>
               </section>
           </Content>
-          <Footer>Footer</Footer>
+          <Footer className="footer">
+                <div className="footer-container">
+                    <div className="footer-top-wrap-2">
+                       <h1 className="heading-16">Quantum Assurance International</h1>
+                    </div>
+                    <div className="div-block-58"></div>
+                </div>
+          </Footer>
         </Layout>
     </div>
     );
