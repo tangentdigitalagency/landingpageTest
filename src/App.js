@@ -128,7 +128,7 @@ function App() {
                   <Row className="text-center">
                       <Col span={24}>
                           <Button type="block " size="large" className="btn-large text-white bg-blue">
-                                          Start Your Free Qoute <ArrowRightOutlined/>
+                                          Start Your Free Quote <ArrowRightOutlined/>
                                         </Button>
                       </Col>
                   </Row>
@@ -207,7 +207,7 @@ function App() {
                     </Row>
                       </Col>
                       <Col xs={{span: 24}} lg={{span: 12}}>
-                          <img src={canvas} alt=""/>
+                          <img className="pic" src={canvas} alt=""/>
                       </Col>
                   </Row>
               </section>
